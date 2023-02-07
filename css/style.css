@@ -160,14 +160,13 @@ nav ul li a {
 /* -------------------- main index -------------------- */
 
 main {
-    height: 80vh;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem 1rem;
     color: var(--colortwo);
 }
 
 main h2 {
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
 }
 
 .index-cards {
@@ -258,6 +257,10 @@ main h2 {
         padding: 5rem;
     }
 
+    main h2 {
+        margin-bottom: 4rem;
+    }
+
     .card {
         margin: 1rem;
     }
@@ -271,3 +274,107 @@ main h2 {
         margin: 0;
     }
 }
+
+/* -------------------- find your color -------------------- */
+
+.find-your-color {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+
+    color: var(--colorfour);
+}
+
+.find-your-color img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.find-info {
+    background-color: var(--colorthree);
+    width: 60%;
+    padding: 7rem 1rem;
+}
+
+.find-info h2 {
+    margin-bottom: 2rem;
+    color: var(--colortwo);
+}
+
+.find-info p {
+    margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+    .find-your-color img {
+        width: 50%;
+    }
+
+    .find-info {
+        width: 50%;
+        padding: 12rem 5rem;
+    }
+}
+
+/* -------------------- why choose us -------------------- */
+.choose-us {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.choose-us h2 {
+    color: var(--colortwo);
+    margin-top: 2rem;
+}
+
+.choose-us-cards {
+    margin-top: 1rem;
+}
+
+.choose-us-card {
+    background-color: var(--colorone);
+    width: 300px;
+    height: 200px;
+    border-radius: 4px;
+    padding: 2rem 1rem;
+    font-size: 0.8rem;
+    margin: 1rem auto;
+}
+
+.choose-us-card h3 {
+    margin-bottom: 1rem;
+    color: var(--colortwo);
+    font-size: 1.2rem;
+}
+
+.choose-us-card i {
+    color: white;
+    font-size: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+    .choose-us {
+        padding: 4rem;
+        color: var(--colorfour);
+    }
+
+    .choose-us-cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+    }
+
+    .choose-us-card {
+        width: 250px;
+    }
+}
+
+/* @media screen and (min-width: 1024px) {
+    .choose-us-card {
+        width: 300px;
+    }
+} */
